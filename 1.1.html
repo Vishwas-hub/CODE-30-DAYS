@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab-3 Q-2</title>
+    <style>
+        th{
+            text-align: left;
+        }
+        #table,#email,#birthdate,#backend,#color,#file,#video{
+            margin-top: 20px;
+        }
+        #submit,#reset{
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <h1> HTML FORMS</h1>
+    <audio controls>
+        <source src="Song.mp3" type="audio/mpeg">
+        <em>your browser doesnt support this audio</em>
+    </audio><br>
+
+    <video width=250px controls id="video">
+        <source src="Waalian.mp4" type="video/mp4">
+        <em>your browser doesnt support this video</em>
+    </video>
+
+    <form>
+        <table id="table">
+            <thead>
+                <tr>
+                    <th><label for="fname">First name: </label></th>
+                    <th><label for="lname">Last name: </label></th>
+                </tr>
+            </thead>
+            <tr>
+                <td><input type="text" id="fname" name="fname"></td>
+                <td><input type="text" id="lname" name="lname"></td>
+            </tr>
+        </table>
+
+        <label for="email"><b>Email: </b></label>
+        <input type="email" id="email" name="email"><br>
+
+        <label for="birth date"><b>Birth date:</b> </label>
+        <input type="date" id="birthdate" name="birth date"><br>
+
+        <p id="frontend"><b>Choose your favourite front-end Web language: </b><p>
+        <input type="radio" id="html" name="language">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="language">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="language">
+        <label for="javascript">JavaScript</label><br>
+
+        <label for="backend"><b>Choose your favourite backend Web language:</b></label>
+        <select id="backend" name="backend">
+            <option value="python">Python</option>
+            <option value="PHP">PHP</option>
+        </select><br>
+
+        <label=color><b>Select your favourite color: </b></label>
+            <input type="color" name="color" id="color" value="#FF0000">
+            <br>
+
+            <label for="file"><b>Select file: </b></label>
+            <input type="file" name="file" id="file"><br>
+
+            <input type="submit" value="SUBMIT" id="submit">
+            <input type="reset" value="RESET" id="reset">
+    </form>
+</body>
+</html>
