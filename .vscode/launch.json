@@ -6,11 +6,12 @@
     "configurations": [
 
 
+
         {
             "type": "pwa-chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "C:\\Users\\admin\\Desktop\\FRONT END - WEB\\lab 2\\3.html",
+            "file": "C:\\Users\\admin\\Desktop\\FRONT END - WEB\\lab 4\\4.3.html",
         }
     ]
 }
